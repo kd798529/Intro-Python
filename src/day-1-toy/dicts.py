@@ -3,6 +3,18 @@
 # lat: the latitude
 # lon: the longitude
 # name: the waypoint name
+
+dictionArray = [
+    {
+        "lat": "the latitude",
+    },
+    {
+        "lon": "the longitude",
+    },
+    {
+        "name": "the waypoint name"
+    }
+]
 #
 # Make up three entries of various values.
 
@@ -26,4 +38,7 @@ waypoints = [
 
 # Write a loop that prints out all the field values for all the waypoints
 
+for point in waypoints:
+    print(point['name'], point['lon'], point['lat'])
 # Add a new waypoint to the list
+waypoints.append({'lat': 50, 'lon': 28, 'name': 'jordan'})
